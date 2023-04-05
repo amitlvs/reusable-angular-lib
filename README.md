@@ -29,6 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## DOCS STEPS : To create an angular-lib
 
 `Step 1` : Create an Angular Project
+##
+
 `Step 2 `: Run `ng generate library npm-angular-lib` to create lib folder
 `Step 3` : Run `ng-build <lib-name>/ ng build <lib-name> --watch` to build the library.
 `Step 4` : Import `<lib-name-module>`in the module.ts file of angular app.
