@@ -91,6 +91,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
                     "dist/at-custom-lib"
                 ]
                 }     
-                
+## Publishing to NPM
+`Step 9` : Create account on [NPMJS](https://www.npmjs.com/). 
+##
+`Step 10` : Add user in VSCODE, Use command `npm adduser`. Enter `username | password | emailid | otp`.
+## `Step 11` : Check the user deatails `npm whoami`.
   [To create Own package](https://youtu.be/tSIC3wna_d0) 
   [Publish to NPM](https://youtu.be/GF8u_KPYhzw)
