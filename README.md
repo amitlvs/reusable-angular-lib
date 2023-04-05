@@ -28,18 +28,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## DOCS STEPS : To create an angular-lib
 
-Step 1 : Create an Angular Project
-Step 2 : Run ng new npm-angular-lib to create lib folder
-Step 3 : Run ng-build <lib-name>/ ng build <lib-name> --watch to build the library.
-Step 4 : Import <lib-name-module> in the module.ts file of angular app.
-Step 5 : Check tsconfig.json compilerOptions should have path of dist folder.
+`Step 1` : Create an Angular Project
+`Step 2 `: Run `ng generate library npm-angular-lib` to create lib folder
+`Step 3` : Run `ng-build <lib-name>/ ng build <lib-name> --watch` to build the library.
+`Step 4` : Import `<lib-name-module>`in the module.ts file of angular app.
+`Step 5` : Check [tsconfig.json] `compilerOptions` should have path of dist folder.
             "compilerOptions": {
                 "paths": {
                 "at-custom-lib": [
                     "dist/at-custom-lib"
                 ]
                 } 
-Step 6 : Check angular.json file have the correct paths.
+`Step 6` : Check `[angular.json]` file have the correct paths.
 "at-custom-lib": {
       "projectType": "library",
       "root": "projects/at-custom-lib",
@@ -73,8 +73,8 @@ Step 6 : Check angular.json file have the correct paths.
         }
       }
     }  
-Step 7 : Above steps will work fine for same application/workspace or monolith app created in that application. For aniother workspace we have to add one line of path for specifying angular.
-Step 8 : Add the below code in tsconfig.json file
+`Step 7` : Above steps will work fine for same `application/workspace` or monolith app created in that application. For aniother workspace we have to add one line of path for specifying angular.
+`Step 8` : Add the below code in `tsconfig.json` file
 "compilerOptions": {
                 "paths": {
                 "at-custom-lib": [
