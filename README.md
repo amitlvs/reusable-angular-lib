@@ -90,4 +90,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
                 "at-custom-lib": [
                     "dist/at-custom-lib"
                 ]
-                }                   
+                }     
+                
+  [To create Own package](https://youtu.be/tSIC3wna_d0) 
+  [Publish to NPM](https://youtu.be/GF8u_KPYhzw)
