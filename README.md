@@ -91,6 +91,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
                     "dist/at-custom-lib"
                 ]
                 }     
-                
-  [To create Own package](https://youtu.be/tSIC3wna_d0) 
-  [Publish to NPM](https://youtu.be/GF8u_KPYhzw)
+## Publishing to NPM
+`Step 9` : Create account on [NPMJS](https://www.npmjs.com/). 
+##
+`Step 10` : Add user in VSCODE, Use command `npm adduser`. Enter `username | password | emailid | otp`.
+## 
+`Step 11` : Check the user deatails `npm whoami`.
+##
+`Step 12` : Do `ng build` in the file path.
+##
+`Step 13` : Go to path where `dist` folder is present in my case it is `dist/at-custom-lib`.
+##
+`Step 14` : Run command `npm publish`.
+##
+`Step 15` : If anything we are changing in the library, edit the `version` in `package.json` file and do `npm publish` to publish with latest changes.
+##  [To create Own package](https://youtu.be/tSIC3wna_d0) 
+## [Publish to NPM](https://youtu.be/GF8u_KPYhzw)
+<img width="1440" alt="Screenshot 2023-04-05 at 3 59 56 PM" src="https://user-images.githubusercontent.com/85306285/230055375-b972e3c8-0251-44d9-8966-ad435d7152ee.png">
+
+ 
+  
