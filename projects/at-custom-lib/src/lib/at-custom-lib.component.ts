@@ -1,9 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'lib-at-custom-lib',
-  template: ` <p>at-custom-lib works! Hola Amit!!</p>
-    <h2>Amittttt</h2>`,
+  template: `
+    <button
+      (click)="btnClick($event)"
+      [style.backgroundColor]="bgColor"
+      [style.color]="btnColor"
+    >
+      {{ btnLabel }}
+    </button>
+  `,
+
   styles: [],
 })
-export class AtCustomLibComponent {}
+export class AtCustomLibComponent {
+  @Input() bgColor: any;
+  @Input() btnLabel: any;
+  @Input() btnColor: any;
+  @Output() btnClicked: EventEmitter<any> = new EventEmitter<any>();
+
+  btnClick(e: any) {
+    this.btnClicked.emit(e);
+  }
+}
