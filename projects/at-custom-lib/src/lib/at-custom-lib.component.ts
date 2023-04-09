@@ -3,6 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   selector: 'lib-at-custom-lib',
   template: `
+    <!-- Revamp it with the latest features -->
     <button
       (click)="btnClick($event)"
       [style.backgroundColor]="bgColor"
