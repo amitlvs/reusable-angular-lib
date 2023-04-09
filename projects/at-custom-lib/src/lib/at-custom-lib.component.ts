@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
       (click)="btnClick($event)"
       [style.backgroundColor]="bgColor"
       [style.color]="btnColor"
+      [class]="btnClass"
     >
       {{ btnLabel }}
     </button>
@@ -19,6 +20,7 @@ export class AtCustomLibComponent {
   @Input() btnLabel: any;
   @Input() btnColor: any;
   @Output() btnClicked: EventEmitter<any> = new EventEmitter<any>();
+  @Input() btnClass: any;
 
   btnClick(e: any) {
     this.btnClicked.emit(e);
